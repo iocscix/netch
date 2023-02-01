@@ -11,7 +11,7 @@ param (
 
 	[Parameter()]
 	[bool]
-	$SelfContained = $True,
+	$SelfContained = $False,
 
 	[Parameter()]
 	[bool]
