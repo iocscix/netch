@@ -15,7 +15,7 @@ param (
 
 	[Parameter()]
 	[bool]
-	$PublishSingleFile = $True,
+	$PublishSingleFile = $False,
 
 	[Parameter()]
 	[bool]
