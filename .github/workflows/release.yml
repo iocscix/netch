@@ -46,13 +46,7 @@ jobs:
         uses: andstor/file-existence-action@v2
         with:
           files: .\other\release\aiodns.bin
-
-      - name: Setup Go
-        uses: actions/setup-go@v3
-        if: steps.check_other.outputs.files_exists == 'false'
-        with:
-          go-version: stable
-
+          
       - name: Setup C++
         uses: msys2/setup-msys2@v2
         if: steps.check_other.outputs.files_exists == 'false'
